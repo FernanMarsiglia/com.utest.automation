@@ -1,10 +1,11 @@
 package com.utest.stepdefinitions;
 
+import com.utest.tasks.Go;
 import cucumber.api.java.en.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.screenplay.actors.Onstage;
+import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 
@@ -16,7 +17,7 @@ public class utestAutomation {
 
     @Given("^than Fernan wants to join in the utest platform$")
     public void thanFernanWantsToJoinInTheUtestPlatform() {
-        throw new PendingException();
+        OnStage.theActorCalled("Fernan").wasAbleTo(Go.toUtestPage());
     }
 
     @When("^he enters to the website and clicks on register$")
