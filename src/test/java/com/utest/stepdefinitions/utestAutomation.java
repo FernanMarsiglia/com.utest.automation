@@ -29,5 +29,7 @@ public class utestAutomation {
 
     @Then("^he fills out the last part of the registration form$")
     public void heFillsOutTheLastPartOfTheRegistrationForm() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Finish.theRegister());
+        }
     }
 }
