@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions (
-        features = "src/test/resources/features",
-        tags = "@Regresion",
+        features = "src/test/resources/features/utestAutomation.feature",
+        tags = "@stories",
         glue = "com.utest.automation.stepdefinitions",
         snippets = SnippetType.CAMELCASE)
 

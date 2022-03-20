@@ -34,4 +34,4 @@ dependencies {
     implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
 
 }
-gradle.startParameter.continueOnFailure = truerameter.continueOnFailure = true
+gradle.startParameter.continueOnFailure = true
