@@ -1,6 +1,9 @@
 package com.utest.stepdefinitions;
 
 import com.utest.tasks.Go;
+import com.utest.tasks.Login;
+import com.utest.tasks.;
+import com.utest.tasks.;
 import cucumber.api.java.en.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,8 +20,7 @@ public class utestAutomation {
 
     @Given("^than Fernan wants to join in the utest platform$")
     public void thanFernanWantsToJoinInTheUtestPlatform() {
-        OnStage.theActorCalled("Fernan").wasAbleTo(Go.toUtestPage());
-    }
+        OnStage.theActorCalled("Fernan").wasAbleTo(Go.toUtestPage(), (Login.firstPage()))
 
     @When("^he enters to the website and clicks on register$")
     public void heEntersToTheWebsiteAndClicksOnRegister() {
