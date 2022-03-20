@@ -20,15 +20,14 @@ public class utestAutomation {
 
     @Given("^than Fernan wants to join in the utest platform$")
     public void thanFernanWantsToJoinInTheUtestPlatform() {
-        OnStage.theActorCalled("Fernan").wasAbleTo(Go.toUtestPage(), (Login.firstPage()))
+        OnStage.theActorCalled("Fernan").wasAbleTo(Go.toUtestPage(), (Login.firstPage()));
 
-    @When("^he enters to the website and clicks on register$")
-    public void heEntersToTheWebsiteAndClicksOnRegister() {
-        throw new PendingException();
+    @When("^he enters to the website and fills the first register$")
+    public void heEntersToTheWebsiteAndFillsTheFirtRegister() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Fills.theForm());
     }
 
-    @Then("^he fills out the registration form$")
-    public void heFillsOutTheRegistrationForm() {
-        throw new PendingException();
+    @Then("^he fills out the last part of the registration form$")
+    public void heFillsOutTheLastPartOfTheRegistrationForm() {
     }
 }
