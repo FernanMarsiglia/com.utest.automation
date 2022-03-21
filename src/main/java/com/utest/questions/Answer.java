@@ -25,6 +25,6 @@ public class Answer implements Question<Boolean> {
         }else {
             result = false;
         }
-        return = result
+        return result;
     }
 }

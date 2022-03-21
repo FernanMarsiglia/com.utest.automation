@@ -6,6 +6,6 @@ Feature: Utestautomation
   @scenario1
   Scenario: Sign up in the utest platform
     Given than Fernan wants to join in the utest platform
-    When he enters to the website and fills the first register
-    Then he fills out the last part of the registration form
+    When he enters to the website and fills the register
+    Then he confirm the register
 
